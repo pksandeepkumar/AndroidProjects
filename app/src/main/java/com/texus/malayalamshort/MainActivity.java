@@ -45,9 +45,11 @@ public class MainActivity extends AppCompatActivity {
         rvVideoList.setLayoutManager(mLayoutManager);
 
         // specify an adapter (see also next example)
-        mAdapter = new MyAdapter(new String[]{"Sample", "Sample","Sample", "Sample","Sample", "Sample","Sample", "Sample","Sample", "Sample","Sample", "Sample"});
+        mAdapter = new MyAdapter(new String[]{"Sample","Sample", "Sample","Sample", "Sample","Sample", "Sample","Sample", "Sample","Sample", "Sample"});
         rvVideoList.setAdapter(mAdapter);
     }
+
+
 
 
 
