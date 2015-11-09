@@ -12,20 +12,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.texus.malayalamshort.utility;
-
-import android.util.Log;
+package com.texus.malayalamshort.datamodel;
 
 /**
  * @author Sandeep Kumar P K 
  * <br><a href="mailto:pksandeepkumar@gmail.com">pksandeepkumar@gmail.com</a>
  */
-public class LOG {
-
-
-
-	public static void log(String tag, String msg){
-		Log.e(tag, msg);
+public class BaseDataModel {
+	
+	/**
+	 * Assign value to string if the string is null or null string or nothing
+	 * @param string
+	 * @param value
+	 */
+	public static void setValue( String string, String value) {
+		if( string == null) {
+			string = value;return;
+		}
+		if( string.length() == 0) {
+			string = value;return;
+		}
+		if( string.equals("null")) {
+			string = value;return;
+		}
+		return;
 	}
 
 }
